@@ -13,9 +13,7 @@ const Home = () => {
           href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css"
         />
       </Head>
-
         <Container />
-
     </>
   );
 };

@@ -10,7 +10,9 @@ export const theListToDoReducer = createSlice({
       state.myListToDo.push(payload);
     },
     deleteToDo: (state, { payload }: PayloadAction<number>) => {
-      state.myListToDo.filter((item) => item._id != payload);
+      state.myListToDo = state.myListToDo.filter(
+        (item) => item._id !== payload
+      );
     },
   },
 });

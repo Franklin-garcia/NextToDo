@@ -1,4 +1,5 @@
 import Navbar from "../Components/Navbar/navbar";
+import LandingHome from "../LandingPages/landingHome/landingHome";
 import Head from "next/head";
 const Container = (props: any) => (
   <div>
@@ -10,7 +11,9 @@ const Container = (props: any) => (
       />
     </Head>
     <Navbar />
-    <div className="container-fluid">{props.children}</div>
+    <div className="container-fluid">
+      {props.children ? props.children : <LandingHome />}
+    </div>
   </div>
 );
 
